@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap & CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Wikki Trip</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-light bg-light ps-3 pe-2">
+        <div class="container-fluid">
+          <!-- Brand -->
+          <a class="navbar-brand fw-bold fs-2 nav-logo text-main" href="#">
+            <img
+              src="images/vp.svg"
+              alt="Logo"
+              width="50"
+              height="50"
+              class="d-inline-block align-text-top"
+            />
+            Wiki Trips</a
+          >
+          <!-- Hambuger Menu -->
+          <button
+            class="navbar-toggler custom-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon custom-toggler"></span>
+          </button>
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse nav" id="collapsibleNavbar">
+            <button
+              class="btn navbar-btn btn-outline-secondary ms-auto mt-1"
+              href="#"
+            >
+              SIGN IN WITH GOOGLE
+            </button>
+          </div>
+        </div>
+        <!-- / container -->
+      </nav>
+    </header>
+    <main>
+      <!-- Search section -->
+      <section class="search-section">
+        <div class="search-section-container">
+          <h1>Explore the world with WIKI trip</h1>
+          <div class="search-container">
+            <!-- destination & Calendar input container -->
+            <div class="destination-calendar-container">
+              <!-- destination search input-->
+              <div class="destination-container">
+                <label for="start">Where to:</label>
+                <input
+                  type="text"
+                  id="searchInput"
+                  class="controls"
+                  name="trip"
+                  placeholder="city, country"
+                />
+              </div>
+
+              <!-- calendar input -->
+              <div class="calendar-container">
+                <!-- departure date input -->
+                <article class="departure">
+                  <label for="start">Depart</label>
+                  <input type="date" id="start" name="trip-start" />
+                </article>
+
+                <!-- arrival date input -->
+                <article class="arrival">
+                  <label for="start">Return</label>
+                  <input type="date" id="start" name="trip-start" />
+                </article>
+              </div>
+            </div>
+
+            <!-- search button -->
+            <div class="search-button">
+              <a href="#" class="search-btn"
+                ><input type="button" value="Search"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Google map -->
+      <div id="map"></div>
+    </main>
+
+    <!-- External javascript -->
+    <script src="./js/app.js"></script>
+
+    <!-- google map API -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBSsHNVO1lDvFtxkvQ_JorTQTL_nD7vaE4&callback=initMap"
+      async
+      defer
+    ></script>
+
+    <!-- Bootstrap cdn -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+      integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+      integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
