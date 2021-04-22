@@ -16,7 +16,7 @@ function handleTabletChange(e) {
     console.log("Media Query Matched!");
     searchSection.style.background = `url('./images/summer/${randomNumber}.jpeg') center/cover no-repeat`;
   } else {
-    searchSection.style.background = `darkturquoise`;
+    searchSection.style.background = `#02122C`;
   }
 }
 

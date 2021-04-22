@@ -27,10 +27,6 @@ Main section
   box-sizing: border-box;
 }
 
-body {
-  border: 5px solid black;
-}
-
 /* 
 ============
 Search Section
@@ -39,7 +35,7 @@ Search Section
 .search-section {
   /* border: 5px solid yellowgreen; */
   margin: 0 auto;
-  background: darkturquoise;
+  background: #02122c;
   color: #fff;
   font-weight: bold;
   padding: 3rem 0;
@@ -99,6 +95,13 @@ label {
   /* border: 3px solid red; */
   margin-top: 1rem;
   /* display: block; */
+}
+
+.search-btnn {
+  background: #00a698;
+  border: none;
+  color: #fff;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 789px) {
